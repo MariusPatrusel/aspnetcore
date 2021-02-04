@@ -9,7 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Properties\ILLink.Substitutions.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Include="$(ComponentsSharedSourceRoot)src\ArrayBuilder.cs" LinkBase="RenderTree" />
+    <Compile Include="$(SharedSourceRoot)DynamicallyAccessedMemberTypes.cs" LinkBase="Shared" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,8 +44,8 @@
       <Output TaskParameter="TargetOutputs" ItemName="_ProjectPathWithVersion" />
     </MSBuild>
     <ItemGroup>
-      <NuspecProperty Include="@(_ProjectPathWithVersion->WithMetadataValue('PackageId', 'Microsoft.AspnetCore.Components.Analyzers')->'componentAnalyzerVersion=%(PackageVersion)')" />
-      <NuspecProperty Include="@(_ProjectPathWithVersion->WithMetadataValue('PackageId', 'Microsoft.AspnetCore.Authorization')->'authorizationVersion=%(PackageVersion)')" />
+      <NuspecProperty Include="@(_ProjectPathWithVersion-&gt;WithMetadataValue('PackageId', 'Microsoft.AspnetCore.Components.Analyzers')-&gt;'componentAnalyzerVersion=%(PackageVersion)')" />
+      <NuspecProperty Include="@(_ProjectPathWithVersion-&gt;WithMetadataValue('PackageId', 'Microsoft.AspnetCore.Authorization')-&gt;'authorizationVersion=%(PackageVersion)')" />
     </ItemGroup>
   </Target>
 

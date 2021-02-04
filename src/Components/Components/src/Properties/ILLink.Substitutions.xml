@@ -1,0 +1,5 @@
+<linker>
+  <assembly fullname="Microsoft.AspNetCore.Components, PublicKeyToken=adb9793829ddae60">
+    <type fullname="Microsoft.AspNetCore.Components.Routing.Router" preserve="all" />
+  </assembly>
+</linker>
