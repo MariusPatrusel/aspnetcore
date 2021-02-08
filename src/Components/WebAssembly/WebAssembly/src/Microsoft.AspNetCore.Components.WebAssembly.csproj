@@ -57,7 +57,8 @@
   </ItemGroup>
 
   <!-- blazor.webassembly.js should exist after Microsoft.AspNetCore.Components.Web.JS.npmproj builds. -->
-  <Target Name="_CheckBlazorServerJSPath" BeforeTargets="GenerateNuspec" DependsOnTargets="ResolveProjectReferences">
+  <Target Name="_CheckBlazorServerJSPath" BeforeTargets="GenerateNuspec" DependsOnTargets="ResolveProjectReferences"
+      Condition=" '$(IsPackable)' == 'true' ">
     <Error Text="'$(BlazorWebAssemblyJSFile)' does not exist. Enable NodeJS to pack this project."
         Condition=" !EXISTS('$(BlazorWebAssemblyJSFile)') " />
   </Target>
