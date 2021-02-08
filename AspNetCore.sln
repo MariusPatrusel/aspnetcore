@@ -1060,7 +1060,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.CodeAnalysis.Razo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{F6E6A63A-45BE-46BF-B9B4-DA3DDC8FE4B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Razor.Internal.Transport", "src\Razor\tools\Microsoft.AspNetCore.Razor.Internal.Transport\Microsoft.AspNetCore.Razor.Internal.Transport.csproj", "{C3E588B7-AF20-448E-BAF0-D47C29B2E4B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Razor.Internal.Transport", "src\Razor\tools\Microsoft.Aspnetcore.Razor.Internal.Transport\Microsoft.AspNetCore.Razor.Internal.Transport.csproj", "{C3E588B7-AF20-448E-BAF0-D47C29B2E4B0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorSyntaxGenerator", "src\Razor\tools\RazorSyntaxGenerator\RazorSyntaxGenerator.csproj", "{8B37B987-B7A2-4A26-8CF1-7AC1E9FA7ADC}"
 EndProject
@@ -1150,7 +1150,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Negotiate", "Negotiate", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{A641BE9F-113E-4F2F-8DC0-995E97C5BD27}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NegotiateAuthSample", "src\Security\Authentication\Negotiate\Samples\NegotiateAuthSample\NegotiateAuthSample.csproj", "{7F67C1C2-7352-414F-9149-1F16D53C7435}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NegotiateAuthSample", "src\Security\Authentication\Negotiate\samples\NegotiateAuthSample\NegotiateAuthSample.csproj", "{7F67C1C2-7352-414F-9149-1F16D53C7435}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Authentication.Negotiate", "src\Security\Authentication\Negotiate\src\Microsoft.AspNetCore.Authentication.Negotiate.csproj", "{046AFDDE-B31B-4205-B059-0E8E194E954D}"
 EndProject
